@@ -1,0 +1,37 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title"             : "Unite1 Summit",
+    "details"           : "Um evento para quem é apaixonado por programação",
+    "maximumAttendees"  : 100
+}
+
+###
+
+POST http://localhost:3333/events/8d4c65c9-4e31-403e-be34-ae67e092fadf/attendees
+Content-Type: application/json
+
+{
+    "name": "José Romualdo Junior",
+    "email" : "jromualdo3@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/8d4c65c9-4e31-403e-be34-ae67e092fadf
+
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+
+###
+
+GET http://localhost:3333/events/8d4c65c9-4e31-403e-be34-ae67e092fadf/attendees
